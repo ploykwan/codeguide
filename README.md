@@ -33,7 +33,7 @@ and what that function’s future should be.
 6.Don't Repeat your code
 
 
-	```public abstract class AbstractValuable implements Valuable {
+	public abstract class AbstractValuable implements Valuable {
 	/** Value of the money. */
 	private double value;
 	/** The currency of money. */
