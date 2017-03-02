@@ -32,7 +32,6 @@ and what that function’s future should be.
 	
 6.Don't Repeat your code
 
- -> 
 
 	```public abstract class AbstractValuable implements Valuable {
 	/** Value of the money. */
@@ -47,7 +46,7 @@ and what that function’s future should be.
 	public String getCurrency() {
 		return this.currency;
 	}
-}```
+	}
 
 
 
@@ -66,7 +65,7 @@ and what that function’s future should be.
 	public String getCurrency() {
 		return this.currency;
 	}
-}```
+	}
 
-	In the Coin class has extend the AbstractValuable class, and the AbstractValuable class already have getValue() method and getCurrency() method. So Don't write its twice in the Coin class.
+	 -> In the Coin class has extend the AbstractValuable class, and the AbstractValuable class already have getValue() method and getCurrency() method. So Don't write its twice in the Coin class.
 
