@@ -42,21 +42,18 @@ and what that function’s future should be.
 	public double getValue() {
 		return this.value;
 	}
-
 	public String getCurrency() {
 		return this.currency;
 	}
-	}```
+	}
 
 
-
-	```public class Coin extends AbstractValuable {
+	public class Coin extends AbstractValuable {
 	public static final String DEFAULT_CURRENCY = "Baht";
 	/** Value of the coin. */
 	private double value;
 	/** The currency of coin. */
 	private String currency;
-
 	...
 	public double getValue() {
 		return this.value;
@@ -65,7 +62,8 @@ and what that function’s future should be.
 	public String getCurrency() {
 		return this.currency;
 	}
-	}```
+	}
+-> In the Coin class has extend the AbstractValuable class, and the AbstractValuable class already have getValue() method and getCurrency() method. So Don't write its twice in the Coin class.
 
-	 -> In the Coin class has extend the AbstractValuable class, and the AbstractValuable class already have getValue() method and getCurrency() method. So Don't write its twice in the Coin class.
 
+EXERCISE [HERE](https://github.com/ploykwan/codeguide/tree/master/src)
