@@ -14,7 +14,7 @@ and what that function’s future should be.
  ->UML will make you see overall promgram, it make codeing easier.
 
 5.Use Singleton pattern.
- ->Encapsulation will make each class in program not confuse. https://8thlight.com/blog/uncle-bob/2015/06/30/the-little-singleton.html
+ ->Encapsulation will make each class in program not confuse. [Link](https://8thlight.com/blog/uncle-bob/2015/06/30/the-little-singleton.html)
  ->Use getters/setters in other class for get the value or set the value	
 	public double getValue() {
 		return this.value;
@@ -25,7 +25,8 @@ and what that function’s future should be.
 	}
 	
 6.Don't Repeat your code
- -> '''
+ -> 
+'''
 	public abstract class AbstractValuable implements Valuable {
 	private double value;
 	private String currency;
@@ -41,6 +42,7 @@ and what that function’s future should be.
 	}
 }
 '''
+
 
 '''
 public class Coin extends AbstractValuable {
