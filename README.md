@@ -22,10 +22,10 @@ and what that function’s future should be.
  ->Encapsulation will make each class in program not confuse. [Link](https://8thlight.com/blog/uncle-bob/2015/06/30/the-little-singleton.html)
 
  ->Use getters/setters in other class for get the value or set the value	
+	
 	public double getValue() {
 		return this.value;
 	}
-
 	public String getCurrency() {
 		return this.currency;
 	}
@@ -33,13 +33,13 @@ and what that function’s future should be.
 6.Don't Repeat your code
 
  -> 
-'''
-	public abstract class AbstractValuable implements Valuable {
+
+	```public abstract class AbstractValuable implements Valuable {
+	/** Value of the money. */
 	private double value;
+	/** The currency of money. */
 	private String currency;
-
 	...
-
 	public double getValue() {
 		return this.value;
 	}
@@ -47,16 +47,15 @@ and what that function’s future should be.
 	public String getCurrency() {
 		return this.currency;
 	}
-}
-'''
+}```
 
 
-'''
-public class Coin extends AbstractValuable {
+
+	```public class Coin extends AbstractValuable {
 	public static final String DEFAULT_CURRENCY = "Baht";
 	/** Value of the coin. */
 	private double value;
-	/** The currency, of course. */
+	/** The currency of coin. */
 	private String currency;
 
 	...
@@ -67,7 +66,7 @@ public class Coin extends AbstractValuable {
 	public String getCurrency() {
 		return this.currency;
 	}
-}
-'''
-In the Coin class has extend the AbstractValuable class, and the AbstractValuable class already have getValue() method and getCurrency() method. So Don't write its twice in the Coin class.
+}```
+
+	In the Coin class has extend the AbstractValuable class, and the AbstractValuable class already have getValue() method and getCurrency() method. So Don't write its twice in the Coin class.
 
