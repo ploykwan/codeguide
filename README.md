@@ -46,7 +46,7 @@ and what that function’s future should be.
 	public String getCurrency() {
 		return this.currency;
 	}
-	}
+	}```
 
 
 
@@ -65,7 +65,7 @@ and what that function’s future should be.
 	public String getCurrency() {
 		return this.currency;
 	}
-	}
+	}```
 
 	 -> In the Coin class has extend the AbstractValuable class, and the AbstractValuable class already have getValue() method and getCurrency() method. So Don't write its twice in the Coin class.
 
